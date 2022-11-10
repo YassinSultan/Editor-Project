@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Project</title>
+
+    <!-- link font awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- link Bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- link CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row row-cols-1 row-cols-md-2 p-1 p-md-5">
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <div class="image w-100">
+                    <div class="image-box">
+                        <img class="img-fluid" src=""  id="img">
+                        <canvas class="img-fluid" id="canvas"></canvas>
+                    </div>
+                </div>
+                <div class="upload m-4">
+                    <label for="upload">Upload</label>
+                    <input type="file" name="uploadFile" id="upload" class="d-none">
+                </div>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled d-flex flex-column m-0">
+                    <li>
+                        <label for="saturation">saturate</label>
+                        <input type="range" name="saturation" id="saturation" max="200" min="0" value="0">
+                    </li>
+                    <li>
+                        <label for="contrast">contrast</label>
+                        <input type="range" name="contrast" id="contrast" max="200" min="0" value="0">
+                    </li>
+                    <li>
+                        <label for="brightness">brightness</label>
+                        <input type="range" name="brightness" id="brightness" max="200" min="0" value="0">
+                    </li>
+                    <li>
+                        <label for="sepia">Sepia</label>
+                        <input type="range" name="sepia" id="sepia" max="200" min="0" value="0">
+                    </li>
+                    <li>
+                        <label for="grayscale">grayscale</label>
+                        <input type="range" name="grayscale" id="grayscale" step="0.1" max="1" min="0" value="0">
+                    </li>
+                    <li>
+                        <label for="blur">blur</label>
+                        <input type="range" name="blur" id="blur" step="0.1" max="10" min="0" value="0">
+                    </li>
+                    <li>
+                        <label for="hueRotate">hue rotate</label>
+                        <input type="range" name="hueRotate" id="hueRotate" max="350" min="0" value="0">
+                    </li>
+                    <li class="d-flex justify-content-around">
+                        <a class="text-decoration-none" download="image" id="download">Download</a>
+                        <span >Reset</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- link bootstap js -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- link my js -->
+    <script src="js/myscript.js"></script>
+</body>
+</html>
